@@ -96,7 +96,7 @@
         }
  
         /* إعدادات النص في البطاقة */
-       .name-overlay {
+    .name-overlay {
     font-family: 'Cairo', sans-serif;
     position: absolute;
     top: 46%;
@@ -106,11 +106,29 @@
     color: #fff;
     padding: 10px 20px;
     border-radius: 16px;
-    border: 2px solid #fff; /* هذا يضع مستطيل أبيض حول النص */
-    background-color: transparent; /* بدون تعبئة */
+    border: 2px solid #fff;
+    background-color: transparent;
     white-space: nowrap;
     z-index: 20;
     text-align: center;
+}
+
+/* الجوالات المتوسطة والصغيرة */
+@media (max-width: 768px) {
+    .name-overlay {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* الجوالات الصغيرة جداً */
+@media (max-width: 480px) {
+    .name-overlay {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
 }
 
         }
