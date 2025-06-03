@@ -96,17 +96,23 @@
         }
  
         /* إعدادات النص في البطاقة */
-        .name-overlay {
-            font-family: 'Cairo', sans-serif;
-            position: absolute;
-            top: 46%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 40px;
-            color: #fff;
-            white-space: nowrap;
-            z-index: 20;
-            text-align: center;
+       .name-overlay {
+    font-family: 'Cairo', sans-serif;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 2px solid #fff; /* هذا يضع مستطيل أبيض حول النص */
+    background-color: transparent; /* بدون تعبئة */
+    white-space: nowrap;
+    z-index: 20;
+    text-align: center;
+}
+
         }
  
         /* تصغير حجم الخط للأجهزة الصغيرة */
